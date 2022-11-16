@@ -31,4 +31,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: "52bea4b6f9be590f8cf2cffbbd0258a1"
-          command: pages publish public --project=resume
+          command: pages publish public --project-name=resume
