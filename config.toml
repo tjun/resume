@@ -61,10 +61,6 @@ theme = "cayman-hugo-theme"
 
 [menu]
   [[menu.nav]]
-    name = "View on GitHub"
-    url = "/"
-    weight = 1
-  [[menu.nav]]
     name = "PDF"
     url = "https://github.com/tjun/resume/releases"
-    weight = 2
+    weight = 1
