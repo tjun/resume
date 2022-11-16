@@ -61,6 +61,6 @@ theme = "cayman-hugo-theme"
 
 [menu]
   [[menu.nav]]
-    name = "PDF"
-    url = "https://github.com/tjun/resume/releases"
+    name = "Download PDF"
+    url = "https://github.com/tjun/resume/releases/latest"
     weight = 1
