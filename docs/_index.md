@@ -23,9 +23,9 @@ title: "Resume"
 - 金融サービスレベルの信頼性・セキュリティを持つ、クラウドベースのシステムの設計・構築と運用
 - Kubernetes上でのサービス構築運用
 - SLOの設計とシステムの監視設計
-- パフォーマンスなどのトラブルシューティング
-- インシデント対応
+- パフォーマンスなどのトラブルシューティング、インシデント対応
 - インフラセキュリティの設計
+- FinOps（クラウドインフラのコスト最適化）
 
 ### Engineering Manager
 
@@ -42,7 +42,7 @@ title: "Resume"
 ## 技術スタック
 
 - Cloud: Google Cloud Platform全般、AWSは6年前なのでほとんど忘れています
-- CDN: Fastlyなど
+- CDN: Fastly, Cloudflare
 - Kubernetes, Docker
 - IaC: Terraform
 - CI: GitHub Actions, CircleCI
@@ -56,11 +56,12 @@ title: "Resume"
 ### 株式会社メルペイ（2018/04〜現在）、株式会社メルコイン（2022/04〜現在）
 
 SREチームの立ち上げから関わり、金融サービスとして信頼性が求められるシステムの設計・構築と運用をリードしています。TechLeadとして技術的なさまざまな意思決定をしたり、Engineering Managerとして採用しながら組織を作る活動も行っています。
-
+- 肩書
+  - Principal Engineer (2023/12~)
 - 役割
+  - Tech Lead(2023/07~)
   - Manager of managers(2021/10~)
   - Engineering Manager(2018/10~)
-  - Tech Lead(2023/07~)
 - 業務内容
   - Google Cloud PlatformでのTerraformを使ったリソース管理
   - Kubernetes上で動かすマイクロサービスの構築運用支援
@@ -73,10 +74,11 @@ SREチームの立ち上げから関わり、金融サービスとして信頼�
   - SREチームの採用・目標設定・評価などのマネージメント業務
   - インフラ予算策定とコスト最適化（FinOps）
 - 登壇
+  - [CloudNative環境におけるトラブルシューティングガイド / CloudNative Days Tokyo 2023 \- Speaker Deck](https://speakerdeck.com/tjun/20231212-cndt)
   - [メルペイのマイクロサービスとCloud Native / CloudNative Days Kansai2019 Keynote \- Speaker Deck](https://speakerdeck.com/tjun/cloudnative-days-kansai2019)
   - [絶え間なく変化するメルカリ・メルペイにおけるSREの組織と成長 / SRE Next 2020 \- Speaker Deck](https://speakerdeck.com/tjun/sre-next-2020)
   - [メルペイにおけるマイクロサービス運用の苦労と改善 / CloudNative Days Tokyo2020 \- Speaker Deck](https://speakerdeck.com/tjun/cloudnative-days-tokyo2020)
-  - [メルペイのマイクロ サービスを支える GKE と Cloud Spanner / Google Cloud Next Tokyo 2019 \- YouTube](https://www.youtube.com/watch?v=cNSPTOUqrzA)
+  - [メルペイのマイクロサービスを支える GKE と Cloud Spanner / Google Cloud Next Tokyo 2019 \- YouTube](https://www.youtube.com/watch?v=cNSPTOUqrzA)
   - [メルペイの信頼性へのチャレンジ / Mercari Bold Challenge 2019 \- Speaker Deck](https://speakerdeck.com/mercari/0924-bold-challenge-at-tjun)
   - [メルペイを支えるGKEとCloud Spanner / 2019 Google Cloud Architect Night 1 \- Speaker Deck](https://speakerdeck.com/tjun/2019-google-cloud-architect-night-1)
 - Blog記事など
@@ -87,7 +89,7 @@ SREチームの立ち上げから関わり、金融サービスとして信頼�
 
 
 ### エアロセンス株式会社（2016/07〜2018/03）
-※ソニーからの出向
+※出向
 
 ドローンで撮影した画像に対するさまざまなソリューションを提供するサービスのバックエンドとインフラを担当しました。
 
