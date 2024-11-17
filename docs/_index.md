@@ -47,13 +47,22 @@ title: "Resume"
 - IaC: Terraform
 - CI: GitHub Actions, CircleCI
 - Monitoring: Datadog, Cloud Monitoring
-- Coding: 最近はGoとシェルスクリプト. 以前はRubyやC言語の経験がある
+- Coding: 最近はGoとシェルスクリプト. 過去にはRubyやC言語の経験がある
 
 ---
 
 ## 職務経歴詳細
 
-### 株式会社メルペイ（2018/04〜現在）、株式会社メルコイン（2022/04〜現在）
+### newmo株式会社（現在）
+
+Platform Engineeringチームとして、クラウドインフラやCI/CDの仕組み、運用設計などを初期の段階から入ってやっています。
+
+- Blog記事など
+  - [MonorepoでのTerraform運用を楽にする！tfactionを使ったGitHub Actions Workflowの構築 \- newmo 技術ブログ](https://tech.newmo.me/entry/tfaction-github-terraform-workflow)
+  - [OpenTelemetry Collectorを使ったCloud Run to Datadogの実装パターン \- newmo 技術ブログ](https://tech.newmo.me/entry/cloudrun-otel-datadog)
+  - [Google Cloud PAMを使った権限昇格の仕組みと、Terraformでloopをネストする方法 \- newmo 技術ブログ](https://tech.newmo.me/entry/google-cloud-pam)
+
+### 株式会社メルペイ（2018/04〜2024/07）、株式会社メルコイン（2022/04〜2024/07）
 
 SREチームの立ち上げから関わり、金融サービスとして信頼性が求められるシステムの設計・構築と運用をリードしています。TechLeadとして技術的なさまざまな意思決定をしたり、Engineering Managerとして採用しながら組織を作る活動も行っています。
 - 肩書
