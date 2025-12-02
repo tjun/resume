@@ -49,10 +49,10 @@ func main() {
 			var err error
 			buf, _, err = page.PrintToPDF().
 				WithPrintBackground(true).
-				WithMarginTop(0).
-				WithMarginBottom(0).
-				WithMarginLeft(0).
-				WithMarginRight(0).
+				WithMarginTop(0.4).
+				WithMarginBottom(0.4).
+				WithMarginLeft(0.4).
+				WithMarginRight(0.4).
 				Do(ctx)
 			return err
 		}),

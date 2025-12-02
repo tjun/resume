@@ -1,10 +1,10 @@
 .PHONY: build serve pdf lint clean
 
 build:
-	hugo
+	hugo -c docs
 
 serve:
-	hugo server
+	hugo server -c docs
 
 pdf: build
 	go run ./cmd/pdf
