@@ -7,7 +7,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-
 	"time"
 
 	"github.com/chromedp/cdproto/page"
