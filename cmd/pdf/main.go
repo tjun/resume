@@ -36,12 +36,19 @@ func main() {
 	opts := append(chromedp.DefaultExecAllocatorOptions[:],
 		chromedp.Flag("no-sandbox", true),
 		chromedp.Flag("disable-setuid-sandbox", true),
+		chromedp.Flag("disable-dev-shm-usage", true),
+		chromedp.Flag("disable-gpu", true),
+		chromedp.Flag("headless", true),
 	)
 	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer cancel()
 
-	ctx, cancel2 := chromedp.NewContext(allocCtx)
+	// Increase timeout for CI environments
+	ctx, cancel2 := chromedp.NewContext(allocCtx, chromedp.WithLogf(log.Printf))
 	defer cancel2()
+
+	ctx, cancel3 := context.WithTimeout(ctx, 30*time.Second)
+	defer cancel3()
 
 	var buf []byte
 	url := fmt.Sprintf("http://localhost:%s/", *port)
