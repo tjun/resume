@@ -33,8 +33,15 @@ func main() {
 	time.Sleep(1 * time.Second)
 
 	// Generate PDF
-	ctx, cancel := chromedp.NewContext(context.Background())
+	opts := append(chromedp.DefaultExecAllocatorOptions[:],
+		chromedp.Flag("no-sandbox", true),
+		chromedp.Flag("disable-setuid-sandbox", true),
+	)
+	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer cancel()
+
+	ctx, cancel2 := chromedp.NewContext(allocCtx)
+	defer cancel2()
 
 	var buf []byte
 	url := fmt.Sprintf("http://localhost:%s/", *port)
