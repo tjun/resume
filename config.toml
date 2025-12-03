@@ -18,7 +18,7 @@ theme = "cayman-hugo-theme"
 #   tag = "tags"
 
 [permalinks]
-  post = "/:filename/"
+  post = "/:contentbasename/"
 
 [params]
   # Header text, can be markdown

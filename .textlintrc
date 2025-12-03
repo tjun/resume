@@ -11,9 +11,7 @@
       "max-ten": {
         "max": 3
       },
-      "max-kanji-continuous-len": {
-        "max": 6
-      },
+      "max-kanji-continuous-len": false,
       "arabic-kanji-numbers": true,
       "no-mix-dearu-desumasu": {
         "preferInHeader": "",
@@ -95,9 +93,7 @@
       "4.3.8.一重引用符": true
     },
     "preset-ja-spacing": {
-      "ja-space-between-half-and-full-width": {
-        "space": "always"
-      },
+      "ja-space-between-half-and-full-width": false,
       "ja-space-around-code": false,
       "ja-no-space-between-full-width": true,
       "ja-nakaguro-or-halfwidth-space-between-katakana": true,
