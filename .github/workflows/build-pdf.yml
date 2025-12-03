@@ -26,19 +26,13 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - name: Debug - List public directory
-        run: |
-          echo "Contents of public directory:"
-          ls -la public/
-          echo "Contents of public/index.html (if exists):"
-          cat public/index.html || echo "index.html not found"
-
       - name: Build PDF
         run: |
           # Install dependencies for chromedp if needed, but usually ubuntu-latest has chrome
           # We might need to install chrome explicitly or use a container, but let's try default first.
           # Actually, chromedp usually finds the installed chrome.
           # However, in CI environments, we might need to install google-chrome-stable.
+          make build
           make pdf
 
       - name: Create Release and Upload PDF
