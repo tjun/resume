@@ -10,18 +10,32 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.1
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version: '21'
+      
+      - name: Install dependencies
+        run: npm install
       
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
           hugo-version: '0.152.0'
           extended: true
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6.1.0
         with:
-          go-version: '1.23'
+          go-version-file: 'go.mod'
+
+      - name: Lint text
+        run: make lint-text
+
+      - name: Lint Go code
+        run: make lint-go
 
       - name: Build Web and PDF
         run: make pdf

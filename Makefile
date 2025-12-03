@@ -1,4 +1,4 @@
-.PHONY: build serve pdf lint clean
+.PHONY: build serve pdf fmt lint-go lint-text lint clean
 
 build:
 	hugo -c docs
@@ -9,8 +9,17 @@ serve:
 pdf: build
 	go run ./cmd/pdf
 
-lint:
+fmt:
+	go fmt ./...
+
+lint-go:
+	go vet ./...
+	go fmt -n ./...
+
+lint-text:
 	yarn lint
+
+lint: lint-go lint-text
 
 clean:
 	rm -rf public
