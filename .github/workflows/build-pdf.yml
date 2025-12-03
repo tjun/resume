@@ -30,6 +30,7 @@ jobs:
           # We might need to install chrome explicitly or use a container, but let's try default first.
           # Actually, chromedp usually finds the installed chrome.
           # However, in CI environments, we might need to install google-chrome-stable.
+          make build
           make pdf
 
       - name: Create Release and Upload PDF
