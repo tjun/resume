@@ -39,6 +39,7 @@ func main() {
 		chromedp.Flag("disable-dev-shm-usage", true),
 		chromedp.Flag("disable-gpu", true),
 		chromedp.Flag("headless", true),
+		chromedp.WSURLReadTimeout(60*time.Second),
 	)
 	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer cancel()
