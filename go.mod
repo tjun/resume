@@ -3,7 +3,7 @@ module github.com/tjun/resume
 go 1.25.4
 
 require (
-	github.com/chromedp/cdproto v0.0.0-20250724212937-08a3db8b4327
+	github.com/chromedp/cdproto v0.0.0-20250803210736-d308e07a266d
 	github.com/chromedp/chromedp v0.14.2
 )
 
