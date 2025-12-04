@@ -26,13 +26,14 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
+      - name: Install Japanese fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
       - name: Build PDF
         run: |
-          # Install dependencies for chromedp if needed, but usually ubuntu-latest has chrome
-          # We might need to install chrome explicitly or use a container, but let's try default first.
-          # Actually, chromedp usually finds the installed chrome.
-          # However, in CI environments, we might need to install google-chrome-stable.
-          make build
+          hugo -c docs -b http://localhost:8080/
           make pdf
 
       - name: Create Release and Upload PDF
