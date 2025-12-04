@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "schedule": ["before 9am on the first day of the month"],
+  "timezone": "Asia/Tokyo",
+  "minimumReleaseAge": "7 days",
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "packageRules": [
+    {
+      "matchManagers": ["npm", "gomod", "github-actions"],
+      "groupName": "all dependencies",
+      "groupSlug": "all-deps"
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 9am on the first day of the month"]
+  }
+}
